@@ -1,0 +1,10 @@
+<li>
+	{{name}}
+	{{#if smacked}} <image class="photo" src={{pup}} alt={{name}}></image> {{else}} <image class="photo" src={{adult}}
+		alt={{name}}></image>{{/if}}
+	<button class="smack-that" data-id="{{id}}" data-newsmack="{{smacked}}">
+		{{#if smacked}}SMACK THAT!{{else}}WAKE UP!{{/if}}
+	</button>
+
+	<button class="delete-dog" data-id="{{this.id}}">X</button>
+</li>

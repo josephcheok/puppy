@@ -1,0 +1,41 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.delete-cat {
+  box-sizing: border-box;
+  color: whitesmoke;
+  background-color: red;
+  cursor: pointer;
+}
+
+.delete-cat:hover {
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.delete-cat:active {
+  border: 3px solid white;
+}
+
+.photo {
+  height: 150px;
+  width: auto;
+}
