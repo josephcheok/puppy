@@ -104,7 +104,7 @@ var dogArray = [
 $(function() {
   $("#ca").autocomplete({
     source: dogArray,
-    minLength: 3
+    minLength: 2
   });
 
   $(".smack-that").on("click", function(event) {
@@ -136,10 +136,7 @@ $(function() {
     // if (indexOf(dogBreed))
 
     var newDog = {
-      name: dogBreed,
-      smacked: $("[name=smacked]:checked")
-        .val()
-        .trim()
+      name: dogBreed
     };
 
     // Send the POST request.

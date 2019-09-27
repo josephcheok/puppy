@@ -8,7 +8,7 @@
       <ul>
         {{#each dogs}}
         {{#unless smacked}}
-        {{> cats/cat-block smacked=true}}
+        {{> dogs/dog-block smacked=true}}
         {{/unless}}
         {{/each}}
       </ul>
@@ -23,12 +23,10 @@
         </div>
 
         <div class="form-group">
-          <label for="smacked">Smack It</label><br>
-          <input type="radio" name="smacked" value="1" checked> Smacked!<br>
-          <input type="radio" name="smacked" value="0"> Un-smacked
+          <label for="smacked">Starting with A,B,C</label><br>
         </div>
 
-        <button type="submit">Add Puppy</button>
+        <button class="btn btn-dark" type="submit">Add Puppy</button>
       </form>
     </div>
     <div class="col-md-5">
@@ -37,7 +35,7 @@
       <ul>
         {{#each dogs}}
         {{#if smacked}}
-        {{> cats/cat-block smacked=false}}
+        {{> dogs/dog-block smacked=false}}
         {{/if}}
         {{/each}}
       </ul>

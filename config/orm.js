@@ -60,8 +60,6 @@ var orm = {
     queryString += printQuestionMarks(vals.length);
     queryString += ") ";
 
-    console.log(queryString);
-    console.log(vals);
     connection.query(queryString, vals, function(err, result) {
       if (err) {
         throw err;
@@ -79,7 +77,6 @@ var orm = {
     queryString += " WHERE ";
     queryString += condition;
 
-    console.log(queryString);
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;
@@ -120,7 +117,7 @@ var orm = {
   extract: function(table, condition, cb) {
     var queryString = "SELECT * FROM " + table;
     queryString += " WHERE ?";
-    console.log(queryString);
+
     connection.query(queryString, condition, function(err, result) {
       if (err) {
         throw err;

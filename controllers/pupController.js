@@ -8,11 +8,9 @@ var dog = require("../models/dog.js");
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
   dog.all(function(data) {
-    console.log(data);
     var hbsObject = {
       dogs: data
     };
-    console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
@@ -33,8 +31,6 @@ router.post("/api/dogs", function(req, res) {
 
 router.put("/api/dogs/:id", function(req, res) {
   var condition = "id = " + req.params.id;
-
-  console.log("condition", condition);
 
   dog.update(
     {
