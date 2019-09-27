@@ -1,3 +1,7 @@
+body {
+  background-color: red;
+}
+
 li {
   padding: 5px;
   margin: 5px;
@@ -18,24 +22,74 @@ li {
   margin-bottom: 5px;
 }
 
-.delete-cat {
+.delete-dog {
   box-sizing: border-box;
   color: whitesmoke;
   background-color: red;
   cursor: pointer;
+  font-size: 0.8em;
 }
 
-.delete-cat:hover {
+.delete-dog:hover {
   color: white;
   font-weight: bold;
   border: 2px solid white;
 }
 
-.delete-cat:active {
+.delete-dog:active {
   border: 3px solid white;
 }
 
-.photo {
-  height: 150px;
+.card-img-top {
+  display: block;
+  max-height: 150px;
+  max-width: 160px;
   width: auto;
+}
+
+.card {
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.card-body {
+  padding: 0.5rem;
+}
+
+#nextsection {
+  clear: both;
+  font-family: "Erica One", cursive;
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
+
+#sectiontitle {
+  text-align: center;
+  font-family: "Modak", cursive;
+  color: white;
+  font-size: 54px;
+  text-shadow: 5px 5px #000000;
+}
+
+#pomeranian {
+  display: block;
+  width: auto;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  width: 100%;
+}
+
+.smack-that {
+  font-size: 0.8em;
+}
+
+#choosepuppy {
+  font-family: "Erica One", cursive;
+  color: yellow;
+  text-shadow: 2px 2px #000000;
 }

@@ -1,10 +1,11 @@
-<li>
-	{{name}}
-	{{#if smacked}} <image class="photo" src={{pup}} alt={{name}}></image> {{else}} <image class="photo" src={{adult}}
-		alt={{name}}></image>{{/if}}
-	<button class="smack-that" data-id="{{id}}" data-newsmack="{{smacked}}">
-		{{#if smacked}}SMACK THAT!{{else}}WAKE UP!{{/if}}
-	</button>
+<div class="card" style="width: 10rem;">
 
-	<button class="delete-dog" data-id="{{this.id}}">X</button>
-</li>
+	{{#if smacked}} <image class="card-img-top" src={{pup}} alt={{name}}></image> {{else}} <image class="card-img-top"
+		src={{adult}} alt={{name}}></image>{{/if}}
+	<div class="card-body">
+		<h5 class="card-title">{{name}}</h5>
+		<a href="#" class="btn btn-primary smack-that" data-id="{{id}}" data-newsmack="{{smacked}}">{{#if smacked}}SMACK
+			THAT!{{else}}WAKE UP!{{/if}}</a>
+		<button class="delete-dog" data-id="{{this.id}}">X</button>
+	</div>
+</div>
