@@ -133,21 +133,25 @@ $(function() {
       .val()
       .trim();
 
-    // if (indexOf(dogBreed))
+    if (dogArray.indexOf(dogBreed) === -1) {
+      return false;
+    } else {
+      // if (indexOf(dogBreed))
 
-    var newDog = {
-      name: dogBreed
-    };
+      var newDog = {
+        name: dogBreed
+      };
 
-    // Send the POST request.
-    $.ajax("/api/dogs", {
-      type: "POST",
-      data: newDog
-    }).then(function() {
-      console.log("created new dog");
-      // Reload the page to get the updated list
-      location.reload();
-    });
+      // Send the POST request.
+      $.ajax("/api/dogs", {
+        type: "POST",
+        data: newDog
+      }).then(function() {
+        console.log("created new dog");
+        // Reload the page to get the updated list
+        location.reload();
+      });
+    }
   });
 
   $(".delete-dog").on("click", function(event) {
